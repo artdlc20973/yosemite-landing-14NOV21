@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.ibb.co/19rbDFv/yosemite.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  padding: 60px 60px 0 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .logo {
+  background: #fff;
+  padding: 10px 15px;
+}
+.container .logo a {
+  text-decoration: none;
+  color: #26b92d;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.container .nav {
+}
+
+.container .nav .items {
+  display: flex;
+}
+
+.container .nav .items li {
+  list-style: none;
+}
+
+.container .nav .items li a {
+  text-decoration: none;
+  color: #26b92d;
+  font-size: 1em;
+  padding: 0 15px;
+  opacity: 1;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.header p {
+  color: #b8b8b8;
+  letter-spacing: 2px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.header h2 {
+  color: #26b92d;
+  font-size: 2em;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  margin: 0.7em 0;
+}
+
+.header h2 span {
+  font-weight: 400;
+}
+
+.header button {
+  color: #fff;
+  background: #26b92d;
+  padding: 8px 35px;
+  font-weight: lighter;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 25px;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
+
+.icon {
+  float: right;
+  margin-right: 60px;
+  width: 3%;
+  position: relative;
+  margin-top: -45px;
+  opacity: 0;
+}
+
+.icon img {
+  width: 100%;
+  filter: invert(1);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .logo {
+    padding: 6px 13px;
+  }
+  .container .logo a {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  .container .nav .items li a {
+    opacity: 0;
+  }
+  .header p {
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 1.3em;
+  }
+
+  .header h2 {
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 0.4em 0;
+  }
+  .header button {
+    padding: 8px 25px;
+    font-size: 1.2em;
+    border: none;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+  }
+  .icon {
+    margin-right: 30px;
+    width: 5%;
+    margin-top: -30px;
+    opacity: 1;
+  }
+}
+
+/* 
+https://i.ibb.co/fFLzLjM/menu48px.png
+https://i.ibb.co/19rbDFv/yosemite.jpg
+*/
